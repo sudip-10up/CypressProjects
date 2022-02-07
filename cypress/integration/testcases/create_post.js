@@ -3,7 +3,7 @@ describe('Create Post',()=> {
 
     beforeEach(()=>{
 
-        cy.admin_login('admin','admin')
+        cy.admin_login('sudip10up','TjXnMe_GFBk')
         
     })
     it('Create New Post', ()=> {
