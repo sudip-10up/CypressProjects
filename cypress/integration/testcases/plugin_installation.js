@@ -15,7 +15,7 @@ describe('OSS Pluding Test',()=>{
         const filepath = 'restricted-site-access-develop.zip'
         cy.get('input[type="file"]').attachFile(filepath)
         cy.get('#install-plugin-submit').click()
-        cy.visit('http://oss.local/wp-admin/plugins.php')
+        cy.visit('https://testydirt.tastewp.com/wp-admin/')
         cy.get('#activate-restricted-site-access').click()
         cy.get("<p>Plugin activated.</p>",{timeout:3000}).should(($x)=>{
 

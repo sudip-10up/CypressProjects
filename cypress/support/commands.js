@@ -27,7 +27,7 @@ import 'cypress-file-upload';
 
 Cypress.Commands.add('admin_login',(email,password) => {
 
-    cy.visit('https://opposite-impulse.localsite.io/wp-admin/')
+    cy.visit('https://testydirt.tastewp.com/wp-admin/')
     cy.wait(2000);
     cy.get('#user_login').type(email)
     cy.get('#user_pass').type(password)
