@@ -3,7 +3,7 @@ describe('OSS Pluding Test',()=>{
 
     beforeEach(()=>{
 
-        cy.admin_login('sudip10up','TjXnMe_GFBk')
+        cy.admin_login('admin','admin')
         
     })
     it('Plugin Upload and Activation', ()=> {
@@ -15,7 +15,7 @@ describe('OSS Pluding Test',()=>{
         const filepath = 'restricted-site-access-develop.zip'
         cy.get('input[type="file"]').attachFile(filepath)
         cy.get('#install-plugin-submit').click()
-        cy.visit('https://testydirt.tastewp.com/wp-admin/plugins.php')
+        cy.visit('http://oss.local/wp-admin/plugins.php')
         cy.get('#activate-restricted-site-access').click()
         cy.get("<p>Plugin activated.</p>",{timeout:3000}).should(($x)=>{
 
