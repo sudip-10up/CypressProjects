@@ -34,9 +34,6 @@ describe('Create Post',()=> {
         cy.get('[aria-label="10uplogo"] >.attachment-preview >.thumbnail').click()
         cy.get('.media-toolbar-primary >.button').click()
 
-
-
-
         cy.log('Publish Post')
         cy.get('.editor-post-publish-panel__toggle').click()
         cy.get('.editor-post-publish-panel__header-publish-button > .components-button').click()
